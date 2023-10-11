@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp">
+        <RadioButton
+            android:id="@+id/radio_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 minutes before bedtime"/>
+        <RadioButton
+            android:id="@+id/radio_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 minutes before bedtime"/>
+        <RadioButton
+            android:id="@+id/radio_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 minutes before bedtime"/>
+        <RadioButton
+            android:id="@+id/radio_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 minutes before bedtime"/>
+        <RadioButton
+            android:id="@+id/radio_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60 minutes before bedtime"/>
+    </RadioGroup>
+
+</RelativeLayout>

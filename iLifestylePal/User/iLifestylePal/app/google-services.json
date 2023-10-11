@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "268679202640",
+    "firebase_url": "https://ilifestylepal-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ilifestylepal",
+    "storage_bucket": "ilifestylepal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268679202640:android:95ff74a1db996b25ad0e55",
+        "android_client_info": {
+          "package_name": "com.example.ilifestylepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268679202640-8mjngmb2aaba2u1u8ab1hsvk5qcesg7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXljol2IY4NIIafs6DPbpAm_8H9-RfONA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268679202640-8mjngmb2aaba2u1u8ab1hsvk5qcesg7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

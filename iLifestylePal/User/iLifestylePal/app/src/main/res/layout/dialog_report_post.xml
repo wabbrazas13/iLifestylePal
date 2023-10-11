@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Post"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_warning"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:background="#E8FFFB"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/et_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:inputType="textMultiLine"
+            android:background="@android:color/transparent"
+            android:hint="Write the reason here for reporting the post..."
+            android:textSize="18sp"
+            android:gravity="start"
+            android:padding="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:weightSum="2"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/background2"
+                android:insetTop="1dp"
+                android:insetBottom="1dp"
+                android:text="Cancel"
+                android:textColor="@color/delete"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_report"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/background2"
+                android:insetTop="1dp"
+                android:insetBottom="1dp"
+                android:text="Report"
+                android:textColor="@color/delete"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

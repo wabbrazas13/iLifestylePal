@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_male"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="1dp"
+        android:insetBottom="1dp"
+        android:text="I am a Male."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_female"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="1dp"
+        android:insetBottom="1dp"
+        android:text="I am a Female."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="1dp"
+        android:insetBottom="1dp"
+        android:text="I am a Female."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:visibility="gone"/>
+
+</LinearLayout>

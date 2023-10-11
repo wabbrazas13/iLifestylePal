@@ -1,0 +1,36 @@
+/* ---------------------------------------------------
+    ADD FOOD
+----------------------------------------------------- */
+.foodimg-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type='file']{
+    display: none;
+}
+
+input[type='text']{
+    width: 100%;
+}
+
+.image-container img{
+    border: 1px solid grey;
+    height: 280px;
+}
+
+#choose-photo{
+    text-align: center;
+    background-color: #025bee;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+figcaption{
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    color: black;
+}

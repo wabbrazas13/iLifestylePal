@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food_New_Food">
+
+    <include
+        android:id="@+id/addFood_toolbar"
+        layout="@layout/app_add_food_toolbar" />
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/addFood_toolbar">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/addFood_toolbar"
+           android:layout_marginStart="15dp"
+           android:layout_marginTop="15dp"
+           android:layout_marginEnd="15dp"
+           android:layout_marginBottom="15dp"
+           android:orientation="vertical">
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_below="@id/addFood_toolbar"
+               android:layout_marginStart="15dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginEnd="15dp"
+               android:layout_marginBottom="15dp">
+
+               <ImageView
+                   android:id="@+id/selectedImageView"
+                   android:layout_width="200dp"
+                   android:layout_height="100dp"
+                   android:scaleType="centerCrop"
+                   android:visibility="gone"
+                   android:layout_marginBottom="10dp"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="5dp"
+               android:layout_marginBottom="10dp"
+               android:hint="Food Name:">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etFoodName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textPersonName" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="5dp"
+               android:layout_marginBottom="10dp"
+               android:hint="Calories:">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etCalories"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textPersonName" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_marginRight="5dp"
+               android:hint="Meal :"
+               android:layout_marginBottom="10dp">
+
+               <AutoCompleteTextView
+                   android:id="@+id/autoComplete_tvMeal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:focusable="false"
+                   android:text="Breakfast"
+                   android:textAlignment="center" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_weight="1"
+                   android:hint="Enter Ingredient:">
+
+                   <AutoCompleteTextView
+                       android:id="@+id/ingredientEditText"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:paddingStart="18dp"
+                       android:inputType="text"
+                       android:dropDownVerticalOffset="10dp"
+                       android:dropDownAnchor="@+id/ingredientEditText"
+                       android:dropDownHeight="200dp" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <ImageButton
+                   android:id="@+id/addIngredientButton"
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_add" />
+
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/chooseImageButton"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Choose Image" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rvIngredients"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+       </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>
+
+

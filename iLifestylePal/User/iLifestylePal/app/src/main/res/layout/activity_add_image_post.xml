@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddImagePost">
+
+    <include
+        android:id="@+id/add_image_post_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_image_post_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lo_userInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_profile_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_profile"
+                    app:civ_border_color="#888181"
+                    app:civ_border_width="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="Firstname Lastname"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical">
+                    </TextView>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_post_type"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:boxBackgroundColor="#e0eae9"
+                        app:startIconDrawable="@drawable/ic_public">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/actv_privacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:inputType="none"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="5dp"
+                            android:background="@null"
+                            android:text="Public"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_post_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lo_userInfo"
+                android:layout_marginTop="0dp"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Write something about the image above ..."
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:padding="10dp" />
+
+            <ImageView
+                android:id="@+id/iv_image_post"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_below="@id/et_post_description"
+                android:background="@color/black"
+                android:scaleType="fitCenter"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_select_image"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/iv_image_post"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#15C57F"
+                android:insetTop="2dp"
+                android:insetBottom="2dp"
+                android:textSize="20sp"
+                android:text="Select Image"
+                android:textAllCaps="false"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_upload_post"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_select_image"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#3CCF4E"
+                android:insetTop="2dp"
+                android:insetBottom="2dp"
+                android:textSize="20sp"
+                android:text="Upload Post"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

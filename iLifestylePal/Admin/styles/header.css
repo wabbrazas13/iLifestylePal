@@ -1,0 +1,16 @@
+/* ---------------------------------------------------
+    HEADER
+----------------------------------------------------- */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img{
+    height: 60px;
+}
+.header h1{
+    margin: 0px;
+
+}

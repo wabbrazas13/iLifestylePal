@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Step Goal :"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_stepGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_goal_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/step_goal_okay"
+            android:textStyle="italic"
+            android:textSize="14dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/add_friend"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommended :"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/border_style_4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_goal_by_CDC"
+                android:textSize="14dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_cdc_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:drawableLeft="@drawable/ic_like"
+                android:drawableTint="@color/add_friend"
+                android:drawablePadding="5dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/purple_500"
+                android:gravity="center_vertical"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_style_4">
+
+            <TextView
+                android:id="@+id/tv_admin_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_goal_by_admin"
+                android:textSize="14dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_admin_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:drawableLeft="@drawable/ic_like"
+                android:drawableTint="@color/add_friend"
+                android:drawablePadding="5dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/purple_500"
+                android:gravity="center_vertical"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

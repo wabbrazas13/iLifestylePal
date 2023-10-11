@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">iLifestylePal</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <!-- Default Date on activity_daily_habits.xml   -->
+    <string name="default_date">Jan 01 2022</string>
+
+    <string-array name="spinnerStringArray">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+
+    <string-array name="spinnerServing">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    //This is for Food
+    <string-array name="spinnerCategory">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snack</item>
+    </string-array>
+
+
+    <string name="spinner_title">Daily Activity</string>
+    <string name="custom_spinner_ingredient_name_text">Select Dish</string>
+    <string name="tvCalorie_text">Calorie</string>
+
+    <string name="step_goal_okay">"Congratulations! Setting your daily step goal at or above the recommended level is a great way to meet your physical activity needs and improve your overall health and wellbeing."</string>
+    <string name="step_goal_bad">"Please note that setting a daily step goal below the recommended level may not be appropriate for meeting your physical activity needs. We recommend setting your goal to at least the recommended level for optimal health benefits."</string>
+    <string name="step_goal_by_CDC">Centers for Disease Control and Prevention (CDC): The CDC recommends at least 150 minutes of moderate-intensity aerobic activity per week for adults, which can be achieved by taking 7,000 to 8,000 steps per day. </string>
+    <string name="step_goal_by_admin">"Based on your profile information, we recommend a daily step goal of [recommended step goal] to help you maintain a healthy lifestyle. This goal is tailored to your age, gender, weight, and activity level, and can help you improve your overall fitness and well-being."</string>
+    <string name="step_accuracy_note">"Please note that the step count recorded may not be perfectly accurate due to factors such as device placement, user movement patterns, and environmental conditions. To improve accuracy, please ensure that the device is securely and comfortably attached to your body, and try to maintain a consistent walking or running pace. Additionally, avoid using the device in situations where there is a lot of vibration or movement, as this can interfere with the sensor's accuracy."</string>
+
+    <string name="cancel">CANCEL</string>
+    <string name="send">SEND</string>
+    <string name="confirm">CONFIRM</string>
+
+    <string name="duration_dialog_title">Select how many Minutes</string>
+    <string name="serving_dialog_title">Select how many Serving</string>
+
+    <string name="ss_info">On days without a schedule, no wake-up alarm will go off and other features will not automatically turn on.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sleep_status_none">No records found. Unable to determine sleep status.</string>
+    <string name="sleep_status_good">Congratulations maintaining a healthy average sleep duration per day! Keep up the great work, and enjoy the countless benefits that quality sleep brings to your life!</string>
+    <string name="sleep_status_little">You are consistently getting close to the recommended sleep. This suggests that you are effectively managing your sleep needs and maintaining a healthy sleep routine.</string>
+    <string name="sleep_status_minor">You occasionally fall slightly short of the recommended sleep. While this may not significantly impact your overall well-being, it is still important to prioritize consistent, adequate sleep.</string>
+    <string name="sleep_status_moderate">You consistently miss out on a substantial portion of recommended sleep. This level of sleep debt can lead to noticeable impacts on your daytime alertness, cognitive function, and mood. It is advisable to address this sleep debt by making adjustments to your sleep routine and ensuring you prioritize sufficient rest.</string>
+    <string name="sleep_status_significant">Accumulating too much sleep debt can negatively impact your physical and cognitive performance, mood, and overall well-being. Please try establishing a consistent schedule, creating a restful sleep environment, practice relaxation techniques, or engaging in regular physical activity.</string>
+
+    <!--General Tips    -->
+    <string name="tip1">Focus on Consistency: Consistency is key when it comes to exercise.</string>
+    <string name="tip2"> Instead of pushing yourself too hard and burning out quickly, aim for a sustainable routine that you can stick to in the long run</string>
+    <string name="tip3">Find a balance between challenging yourself and allowing for proper rest and recovery.</string>
+</resources>

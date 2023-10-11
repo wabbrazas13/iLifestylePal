@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food_Journal_Activity">
+
+    <include
+        android:id="@+id/foodjournal_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodjournal_toolbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_FoodList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foods"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            <Button
+                android:id="@+id/btn_FoodEaten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Log"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            <Button
+                android:id="@+id/btn_FoodRecommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommendation"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            <Button
+                android:id="@+id/btn_FoodRestricted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restricted"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hsv"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainer"
+            android:name="com.example.ilifestylepal.Food_Foodlist_Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/food_foodlist_fragment"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

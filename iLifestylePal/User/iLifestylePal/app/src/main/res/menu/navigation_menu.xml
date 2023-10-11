@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications"/>
+    <item
+        android:id="@+id/nav_myProfile"
+        android:title="My Profile"
+        android:icon="@drawable/ic_my_profile"/>
+    <item
+        android:id="@+id/nav_findFriends"
+        android:title="Find Friends"
+        android:icon="@drawable/ic_find_friends"/>
+    <item
+        android:id="@+id/nav_dailyactivity"
+        android:title="Daily Activity"
+        android:icon="@drawable/ic_daily_activity"/>
+    <item
+        android:id="@+id/nav_foodjournal"
+        android:title="Food Journal"
+        android:icon="@drawable/ic_food_journal"/>
+    <item
+        android:id="@+id/nav_sleepschedule"
+        android:title="Sleep Schedule"
+        android:icon="@drawable/ic_sleep_schedule"/>
+    <item
+        android:id="@+id/nav_steptracker"
+        android:title="Step Tracker"
+        android:icon="@drawable/ic_step_tracker"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Log Out"
+        android:icon="@drawable/ic_logout"/>
+</menu>

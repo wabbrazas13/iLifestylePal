@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <include
+        android:id="@+id/stepTrack_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <TextView
+        android:id="@+id/displayStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepTrack_toolbar"
+        android:text="Steps"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        />
+    <!-- Step counter display -->
+    <TextView
+        android:id="@+id/step_counter"
+        android:layout_below="@id/displayStep"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:id="@+id/llDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/step_counter">
+
+        <TextView
+            android:id="@+id/step_Distance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            android:layout_height="wrap_content"
+            android:text="0 km"
+            android:textSize="30sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="50dp"
+            android:text="km"
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/calorie_Burned"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            android:layout_height="wrap_content"
+            android:text="0 kcal"
+            android:textSize="30sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="50dp"
+            android:text="cal"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <!-- Weekly steps table -->
+    <TableLayout
+        android:id="@+id/weekly_steps_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llDistance"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Table header row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Day"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Steps"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Distance"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <!-- Monday row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="Monday"/>
+            <TextView
+                android:id="@+id/monday_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/monday_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+        </TableRow>
+
+        <!-- Tuesday row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="Tuesday"/>
+            <TextView
+                android:id="@+id/tuesday_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/tuesday_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+        </TableRow>
+
+        <!-- Wednesday row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wednesday"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/wednesday_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/wednesday_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+        </TableRow>
+
+        <!-- Thursday row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thursday"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/thursday_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/thursday_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+        </TableRow>
+
+        <!-- Friday row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Friday"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/friday_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/friday_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+        </TableRow>
+
+        <!-- Saturday row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saturday"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/saturday_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/saturday_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+        </TableRow>
+
+        <!-- Sunday row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sunday"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/sunday_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/sunday_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="0"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnToday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:textColor="@color/black"
+            android:background="@drawable/round_corner"/>
+
+        <Button
+            android:id="@+id/btnWeek"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Week"
+            android:textColor="@color/black"
+            android:background="@drawable/round_corner"/>
+
+        <Button
+            android:id="@+id/btnMonth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textColor="@color/black"
+            android:background="@drawable/round_corner"/>
+    </LinearLayout>
+</RelativeLayout>
